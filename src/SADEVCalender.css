@@ -1,0 +1,123 @@
+body {
+	margin: 0;
+}
+.supotsu-cal {
+	width: 100vw;
+	height: auto;
+}
+
+.supotsu-cal-header {
+	display: flex;
+	align-items: center;
+	justify-content: centent;
+	width: 100vw;
+}
+
+.supotsu-cal-header > span {
+	flex: 1;
+	display: block;
+	text-align: center;
+	font-size: 18px;
+}
+
+.supotsu-cal-header > i {
+	display: block;
+	margin: 10px;
+	cursor: pointer;
+}
+
+.supotsu-cal-days {
+	display: flex;
+	align-items: center;
+	justify-content: centent;
+	width: 100vw;
+}
+
+.supotsu-cal-days > span {
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	width: calc(100vw / 7);
+	background: #a4d1e5;
+	color: #fff;
+	line-height: 55px;
+	border-right: 0.3px solid #eee;
+}
+
+.supotsu-cal-days > span:last-child {
+	border-right: none;
+}
+
+.supotsu-cal-dates {
+	display: flex;
+	align-items: center;
+	justify-content: centent;
+	flex-wrap: wrap;
+	width: 100vw;
+}
+
+.supotsu-cal-dates > div {
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	box-sizing: border-box;
+	width: calc(100vw / 7);
+	height: calc(100vh / 6);
+	text-align: center;
+	background: #fff;
+	border-bottom: 0.3px solid #ddd;
+	border-right: 0.3px solid #ddd;
+	line-height: 55px;
+	cursor: pointer;
+}
+
+.supotsu-cal-dates > div::after {
+	display: block;
+	box-sizing: border-box;
+	width: calc(100vw / 7);
+	text-align: center;
+	background: #fff;
+	border-bottom: 0.3px solid #ddd;
+	border-right: 0.3px solid #ddd;
+	line-height: 55px;
+	cursor: pointer;
+}
+
+.supotsu-cal-dates > div:nth-child(7n + 1) {
+	border-left: 0.3px solid #ddd;
+}
+
+.supotsu-cal-dates > div.past {
+	color: #fff;
+}
+
+.supotsu-cal-dates > div:hover {
+	background: #f3f6fb;
+}
+
+.icon {
+	border: solid black;
+	border-width: 0 3px 3px 0;
+	display: inline-block;
+	padding: 3px;
+}
+
+.right {
+	transform: rotate(-45deg);
+	-webkit-transform: rotate(-45deg);
+}
+
+.left {
+	transform: rotate(135deg);
+	-webkit-transform: rotate(135deg);
+}
+
+.up {
+	transform: rotate(-135deg);
+	-webkit-transform: rotate(-135deg);
+}
+
+.down {
+	transform: rotate(45deg);
+	-webkit-transform: rotate(45deg);
+}
